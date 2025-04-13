@@ -352,6 +352,10 @@ mark {
   color: #000000;
 }
 
+.input[type="email"] {
+  color: white;
+}
+
 hr {
   border: solid #eaeaea;
   border-width: 1px 0 0;
@@ -852,7 +856,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  color: #000000;
+  color: white;
   box-shadow: 0 0 5px rgba(91, 79, 150, 0.8);
   border: 1px solid #3475ED;
 }
@@ -864,7 +868,7 @@ legend {
   font-size: 1.4rem;
   line-height: 2;
   margin-bottom: .8rem;
-  color: #000000;
+  color: white;
   display: block;
 }
 
