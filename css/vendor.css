@@ -1267,6 +1267,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   display: block;
 }
 
+.aos-animate .testimonials__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .slick-loading .slick-slide {
   visibility: hidden;
 }
