@@ -1003,7 +1003,9 @@ input[type="button"]:focus {
   color: #000000;
   outline: 0;
 }
-
+.item-plan__top-part {
+  height: 25vh;
+}
 /* button primary
  * ------------------------------------------------- */
 .btn.btn--primary,
@@ -1273,6 +1275,12 @@ input::-moz-focus-inner {
   margin: 3.2rem 0;
 }
 
+.slogan {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .stats-tabs li {
   display: inline-block;
   margin: 0 1.6rem 3.2rem 0;
@@ -1493,7 +1501,7 @@ input::-moz-focus-inner {
 
 .item-title {
   font-weight: 600;
-  font-size: 2.8rem;
+  font-size: 1.9rem;
   line-height: 1.286;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -1600,7 +1608,7 @@ input::-moz-focus-inner {
 
 .app-container img{
   width: 20vw;
-  margin: 10px;
+  margin: 10px 5vw;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2284,6 +2292,19 @@ html.no-csstransitions .home-content__main {
   opacity: 1;
 }
 
+#features {
+  background-color: #000;
+}
+
+.contactC {
+  display: flex; 
+  align-items: center;
+}
+
+.contactC input {
+  border: solid 1px white;
+  margin-right: 10px;
+}
 
 /* ------------------------------------------------------------------- 
  * ## home animations
@@ -2568,6 +2589,12 @@ html.no-csstransitions .home-content__main {
     height: 50vw;
   }
 
+  .contactC {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   /* .home-content__right {
     width: 50vw;
   }
@@ -2590,6 +2617,10 @@ html.no-csstransitions .home-content__main {
   .home-content__social,
   .home-scroll {
     display: none;
+  }
+
+  .item-plan__top-part {
+    height: 13vh;
   }
 
 }
@@ -2942,9 +2973,9 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## process
  * ------------------------------------------------------------------- */
-.process-wrap {
-  margin-top: 12rem;
-}
+ .contactC input {
+  width: 50vw;
+ }
 
 .process-wrap h2 {
   margin-bottom: 4rem;
@@ -2998,8 +3029,9 @@ html.no-csstransitions .home-content__main {
   min-height: 240px;
 }
 
-.process .step h3 {
+.process .step h3, .process .step p {
   margin-bottom: 2.4rem;
+  color: white;
 }
 
 .process .step::before {
@@ -3156,6 +3188,10 @@ html.no-csstransitions .home-content__main {
     left: 8px;
   }
 
+  .contactC input {
+    width: 80vw;
+  }
+
 }
 
 @media only screen and (max-width:600px) {
@@ -3236,8 +3272,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-features {
-  padding-top: 19.2rem;
-  padding-bottom: 20rem;
+  /* padding-top: 19.2rem; */
+  /* padding-bottom: 20rem; */
   background-color: #eaeaea;
   overflow: hidden;
   position: relative;
@@ -3541,7 +3577,7 @@ html.no-csstransitions .home-content__main {
 
 .item-plan__price {
   font-family: "Chivo", sans-serif;
-  font-size: 5.4rem;
+  font-size: 3.5rem;
   line-height: 1.081;
   font-weight: 600;
   color: #000000;
@@ -3554,13 +3590,6 @@ html.no-csstransitions .home-content__main {
   margin: 0 4px;
 }
 
-.item-plan__bottom-part {
-  /* margin-top: 4.4rem; */
-}
-
-.item-plan__top-part {
-  height: 25vh;
-}
 
 .item-plan__features {
   font-size: 1.7rem;
@@ -3822,7 +3851,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-footer p.lead {
-  color: rgba(255, 255, 255, 0.3);
+  color: white
 }
 
 .s-footer .footer__mail-link {
@@ -3847,7 +3876,7 @@ html.no-csstransitions .home-content__main {
  * ## subscribe form
  * ------------------------------------------------------------------- */
 .footer__subscribe .subscribe-form {
-  margin: 4rem 0 0 0;
+  /* margin: 4rem 0 0 0; */
   padding: 0;
   position: relative;
 }
