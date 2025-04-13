@@ -1004,7 +1004,7 @@ input[type="button"]:focus {
   outline: 0;
 }
 .item-plan__top-part {
-  height: 25vh;
+  height: 15vh;
 }
 /* button primary
  * ------------------------------------------------- */
@@ -1281,6 +1281,10 @@ input::-moz-focus-inner {
   align-items: center;
 }
 
+.slogan .improve {
+  font-weight: 600;
+}
+
 .stats-tabs li {
   display: inline-block;
   margin: 0 1.6rem 3.2rem 0;
@@ -1500,8 +1504,8 @@ input::-moz-focus-inner {
 }
 
 .item-title {
-  font-weight: 600;
-  font-size: 1.9rem;
+  font-weight: 400;
+  font-size: 3rem;
   line-height: 1.286;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -2176,7 +2180,7 @@ input::-moz-focus-inner {
  * ## home button section
  * ------------------------------------------------------------------- */
 .home-content__btn-wrap {
-  margin-top: 7.2rem;
+  /* margin-top: 7.2rem; */
 }
 
 .home-content__btn-wrap .home-content__btn {
